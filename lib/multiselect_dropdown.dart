@@ -781,7 +781,8 @@ class _MultiSelectDropDownState<T> extends State<MultiSelectDropDown<T>> {
                               padding: const EdgeInsets.all(8.0),
                               child: TextFormField(
                                 style: TextStyle(
-                                  fontSize: 16
+                                  fontSize: 16,
+                                  color: Theme.of(context).colorScheme.onTertiary
                                 ),
                                 controller: searchController,
                                 onTapOutside: (_) {},
