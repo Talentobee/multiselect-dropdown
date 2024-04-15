@@ -780,6 +780,9 @@ class _MultiSelectDropDownState<T> extends State<MultiSelectDropDown<T>> {
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: TextFormField(
+                                style: TextStyle(
+                                  fontSize: 16
+                                ),
                                 controller: searchController,
                                 onTapOutside: (_) {},
                                 scrollPadding: EdgeInsets.only(
@@ -788,6 +791,9 @@ class _MultiSelectDropDownState<T> extends State<MultiSelectDropDown<T>> {
                                         .bottom),
                                 focusNode: _searchFocusNode,
                                 decoration: InputDecoration(
+                                  hintStyle: TextStyle(
+                                    fontSize: 16
+                                  ),
                                   fillColor: widget.searchBackgroundColor ??
                                       Colors.grey.shade200,
                                   isDense: true,
